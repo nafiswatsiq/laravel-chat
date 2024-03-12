@@ -44,4 +44,9 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function unreadMessages()
+    {
+        return $this->hasMany(ChMessage::class, 'to_id')->where('seen', 0);
+    }
 }

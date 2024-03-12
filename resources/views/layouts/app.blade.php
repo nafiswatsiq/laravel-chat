@@ -31,6 +31,8 @@
             <main>
                 {{ $slot }}
             </main>
+
+            <livewire:bubble-chat />
         </div>
     </body>
 </html>
