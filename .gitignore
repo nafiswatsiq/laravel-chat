@@ -6,6 +6,7 @@
 /storage/*.key
 /vendor/**
 !/vendor/munafio
+!/vendor/munafio/chatify
 .env
 .env.backup
 .env.production
