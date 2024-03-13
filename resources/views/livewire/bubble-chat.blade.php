@@ -35,7 +35,7 @@
                     @endfor
                 </div>
                 @if($openChat == true)
-                <iframe src="{{ env('APP_URL') }}/dashboard/chat" frameborder="0" class="w-[20rem] h-[30rem]"></iframe>
+                <iframe src="{{ env('APP_URL') }}/{{ env('CHATIFY_ROUTES_PREFIX') }}" frameborder="0" class="w-[20rem] h-[30rem]"></iframe>
                 @endif
             </div>
         </div>
