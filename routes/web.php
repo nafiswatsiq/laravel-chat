@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 
 Route::view('/', 'welcome');
 
@@ -13,3 +14,14 @@ Route::view('profile', 'profile')
     ->name('profile');
 
 require __DIR__.'/auth.php';
+
+
+Route::get('storage-link', function () {
+    Artisan::call('storage:link');
+    return 'success';
+});
+
+Route::get('migrate', function () {
+    Artisan::call('migrate');
+    return 'success';
+});
