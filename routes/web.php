@@ -25,3 +25,13 @@ Route::get('migrate', function () {
     Artisan::call('migrate');
     return 'success';
 });
+
+Route::get('web-down', function () {
+    Artisan::call('down');
+    return 'success';
+});
+
+Route::get('web-up', function () {
+    Artisan::call('up');
+    return 'success';
+});
